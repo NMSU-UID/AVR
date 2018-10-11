@@ -1,0 +1,13 @@
+<% provide(:title, "Log in") %>
+<h1>Log in</h1>
+
+<div id="login">
+  <%= form_for(:session, url: '/login') do |f| %>
+    <%= f.label :pin %>
+    <%= f.text_field :pin, class: 'form_control' %>
+
+    <%= f.submit "Log in", class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+
