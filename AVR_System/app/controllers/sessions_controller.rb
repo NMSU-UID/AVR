@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
       session[:waiter_id] = @waiter.id
       redirect_to :waiters
     else
-      # flash[:error] = "Invalid PIN!"
-      redirect_to '/login', danger: "Invalid PIN!"
+      flash[:error] = 'Invalid PIN'
+      redirect_to '/login'
     end
   end
 
