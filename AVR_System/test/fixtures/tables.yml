@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  table_number: 1
+  employee_id: one
+
+two:
+  table_number: 1
+  employee_id: two

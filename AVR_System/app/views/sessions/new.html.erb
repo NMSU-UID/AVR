@@ -3,10 +3,10 @@
 
 <div id="login">
   <%= form_for(:session, url: '/login') do |f| %>
-    <%= f.label :pin %>
-    <%= f.text_field :pin, class: 'form_control' %>
+    <p><%= f.label :pin %><br>
+    <%= f.text_field :pin, class: 'form_control' %></p>
 
-    <%= f.submit "Log in", class: "btn btn-primary" %>
+    <p><%= f.submit "Log in", class: "btn btn-primary" %></p>
   <% end %>
 </div>
 

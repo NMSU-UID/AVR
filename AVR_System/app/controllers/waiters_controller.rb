@@ -28,7 +28,8 @@ class WaitersController < ApplicationController
 
     respond_to do |format|
       if @waiter.save
-        format.html { redirect_to @waiter, success: 'Waiter was successfully created.' }
+        flash[:success] = "Waiter was successfully created."
+        format.html { redirect_to @waiter }
         format.json { render :show, status: :created, location: @waiter }
       else
         format.html { render :new }
@@ -42,7 +43,8 @@ class WaitersController < ApplicationController
   def update
     respond_to do |format|
       if @waiter.update(waiter_params)
-        format.html { redirect_to @waiter, success: 'Waiter was successfully updated.' }
+        flash[:success] = "Waiter was successfully updated."
+        format.html { redirect_to @waiter }
         format.json { render :show, status: :ok, location: @waiter }
       else
         format.html { render :edit }
