@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2018_10_14_091054) do
 
-  create_table "tables", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "tables", force: :cascade do |t|
     t.integer "table_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -20,7 +23,7 @@ ActiveRecord::Schema.define(version: 2018_10_14_091054) do
     t.index ["waiters_id"], name: "index_tables_on_waiters_id"
   end
 
-  create_table "waiters", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "waiters", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.integer "pin"
