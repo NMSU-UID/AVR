@@ -8,7 +8,11 @@ class SessionsController < ApplicationController
     if @waiter
       session[:waiter_id] = @waiter.id
       flash[:success] = "You are logged in as #{@waiter.last_name}, #{@waiter.first_name}"
-      redirect_to :tables
+      if @waiter.manager
+        redirect_to :waiters
+      else
+        redirect_to :tables
+      end
     else
       flash[:error] = 'Invalid PIN'
       redirect_to '/login'

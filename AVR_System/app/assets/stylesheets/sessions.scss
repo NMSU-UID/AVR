@@ -4,17 +4,26 @@
 
 
 #login {
-  min-width: 50%;
+  min-width: 30%;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 25%;
   transform: translate(-50%, -50%);
+  border: 1px solid darkgray;
+  background-color: #f0f0f0;
 }
 
 #login p {
- text-align: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+hr {
+  border-color: gray;
+  color: gray;
 }
 
 h1 {
-  color: red;
+
+  text-align: center;
 }
