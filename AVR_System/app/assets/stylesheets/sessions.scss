@@ -4,11 +4,11 @@
 
 
 #login {
-  min-width: 30%;
-  position: absolute;
+  min-width: 15%;
+  max-width: 20%;
+  position: relative;
   left: 50%;
-  top: 25%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   border: 1px solid darkgray;
   background-color: #f0f0f0;
 }

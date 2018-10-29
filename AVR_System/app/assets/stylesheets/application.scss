@@ -5,3 +5,358 @@
 *= require_tree
 *= require_self
  */
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery-ui
+ *= require_tree .
+ */
+
+.banner {
+  left: 0;
+  right: 0;
+  background-color: #E8E3E3;
+}
+
+#navbar_greeting {
+  padding-top: 8px;
+}
+
+.test_banner {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#navbar_greeting {
+  padding-top: 8px;
+}
+
+#logout_button, .mobile_navbar_greeting a {
+  color: #ff9900;
+  text-decoration: none;
+  padding: 0px 6px 0px 0px;
+}
+
+.nmda_logo {
+  height: 45px;
+  width: 120px;
+  float: right;
+  opacity: .6;
+}
+
+.nav_and_content {
+  padding: 0px;
+  min-height: calc(100vh - 50px); }
+.nav_and_content .content_wrapper {
+  background-color: green; }
+.nav_and_content .content {
+  background-color: rgb(247, 247, 247);
+  border: solid 2px;
+  border-top: 0px;
+  border-color: #333333;
+  border-radius: 0% 0% 10px 10px;
+  padding: 10px;
+  min-height: 650px;
+}
+
+.content a:link {
+  color: #464bb4;
+}
+
+.content a:visited {
+  color: #464bb4;
+}
+
+.content a:hover {
+  color: lightcyan;
+}
+
+.nav_and_content #top_navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #333333;
+  color: #f2f2f2;
+  z-index: 1;
+  position: fixed;}
+.nav_and_content #top_navigation ul {
+  height: 30px;
+  margin: 0 30px 0 0;
+  padding: 0; }
+.nav_and_content #top_navigation ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.nav_and_content #top_navigation ul li a {
+  float: left;
+  margin: 0;
+  padding: 8px 8px 2px;
+  background-color: #333333;
+  color: #f2f2f2;
+  text-decoration: none; }
+.nav_and_content #top_navigation ul li a:hover {
+  background-color: #333333;
+  color: #f2f2f2;
+}
+.nav_and_content #top_navigation ul li a.selected {
+  background-color: #4d4d4d;
+  color: #f2f2f2; }
+.nav_and_content #sub_navigation {
+  float: left;
+  max-width: 100px;
+  margin: 0 10px 0 0;
+}
+.nav_and_content #sub_navigation li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.nav_and_content #sub_navigation li a {
+  float: right;
+  font-size: 10pt;
+  font-weight: normal;
+  margin: 0;
+  padding: 2px 8px 4px;
+  margin: 2px 0px 2px;
+  background-color: #8c0b42;
+  border-color: greenyellow;
+  border-style: solid;
+  border-width: 0px;
+  color: whitesmoke;
+  text-decoration: none;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  width: 80px;
+  text-align: right; }
+.nav_and_content #sub_navigation li a:hover {
+  background-color: #f1a899;
+  color: navy;
+}
+.nav_and_content #sub_navigation li a.selected {
+  background-color: white;
+  color: black;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;
+  background-color: #444;
+  height: 1px;
+}
+
+table.listing th {
+  padding: 0 5px 0 5px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+table.listing td {
+  padding: 0 5px 0 5px;
+  border-bottom-style: none;
+}
+
+table.listing tr:nth-child(odd) td {
+  background-color: #DCDCDC;
+}
+
+table.listing td + td {
+  border-left: 1px solid #a9a9a9;
+}
+
+table.listing th + th {
+  border-left: 1px solid #a9a9a9;
+}
+
+table.listing thead tr {
+  border-bottom: 1pt solid #a9a9a9;
+}
+
+table.listing {
+  margin: 0px;
+  border-spacing: 0px;
+}
+
+table.listing tr[class~="highlight"] td {
+  background: transparent;
+}
+
+select.search {
+  width: 150px;
+}
+
+table.search td {
+  padding: 5px;
+}
+
+table.search select {
+  width: 150px;
+}
+
+table.search input {
+  width: 150px;
+}
+
+.side_by_side_form {
+  max-width: 750px;
+  padding: 20px 12px 10px 0px;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+
+.side_by_side_form label {
+  display: block;
+  margin: 0px 0px 15px 0px;
+}
+
+.side_by_side_form label > span {
+  width: 120px;
+  font-weight: bold;
+  float: left;
+  padding-top: 8px;
+  padding-right: 5px;
+  display: block;
+}
+
+.side_by_side_form input[type="text"], select {
+  width: 250px;
+}
+
+.side_by_side_form input[type="number"] {
+  width: 100px;
+}
+
+span.display_only {
+  font-weight: normal !important;
+}
+
+div.display_only {
+  font-weight: normal;
+  padding-top: 8px;
+  padding-right: 5px;
+  display: block;
+}
+
+.side_by_side_form input[type="text"]:disabled {
+  background-color: #F8F8F8;
+  border: 1px solid #F8F8F8;
+  box-shadow: none;
+}
+
+.side_by_side_form input[type="text"], input[type="tel"], input[type="email"], input[type="number"], textarea, select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 7px;
+  outline: none;
+}
+.side_by_side_form input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+  border: 1px solid rgb(0, 185, 242);
+}
+.side_by_side_form textarea {
+  height:100px;
+  width: 400px;
+}
+
+.side_by_side_form td > textarea {
+  width: 225px;
+  height: 75px;
+
+}
+
+.side_by_side_form input[type=submit], input[type=button] {
+  border: none;
+  padding: 8px 15px 8px 15px;
+  background: #c85b18;
+  color: #fff;
+  box-shadow: 1px 1px 4px #DADADA;
+  -moz-box-shadow: 1px 1px 4px #DADADA;
+  -webkit-box-shadow: 1px 1px 4px #DADADA;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-weight: bold;
+}
+.side_by_side_form input[type=submit]:hover,
+.side_by_side_form input[type=button]:hover {
+  background: #B45115;
+  color: #fff;
+}
+
+div.two_column.narrow {
+  width: 500px;
+}
+
+div.two_column.wide {
+  width: 727px;
+}
+
+.two_column label {
+  display: inline;
+  padding-right: 47px;
+}
+
+.two_column.left_column label {
+  float: left;
+}
+
+.two_column.right_column label {
+  float: right;
+}
+
+.two_column label > span {
+  width: 60px;
+  float: none;
+  padding-right: 12px;
+  display: inline;
+}
+
+.two_column input[type="text"], select {
+  width: 100px;
+}
+
+div.form_grouping {
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 10px;
+  background: #F8F8F8;
+  margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+}

@@ -3,10 +3,9 @@ Rails.application.routes.draw do
   get 'sessions/new'
   resources :waiters
 
-  get    '/login',   to: 'sessions#new'
-  post   '/login',   to: 'sessions#create'
-  delete '/logout',  to: 'sessions#destroy'
+  match "/signout" => "sessions#destroy", via: [:get,:post]
+  match "/signin" => "sessions#new", via: [:get,:post]
+  match "/login" => "sessions#create", via: [:get,:post]
 
-
-  root 'sessions#new'
+  root to: 'waiters#index'
 end
