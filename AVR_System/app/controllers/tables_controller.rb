@@ -4,7 +4,12 @@ class TablesController < ApplicationController
   # GET /tables
   # GET /tables.json
   def index
-    @tables = Table.all
+    if @current_user.manager?
+      @tables = Table.all
+    else
+      @tables = @current_user.tables
+    end
+
   end
 
   # GET /tables/1
@@ -25,6 +30,7 @@ class TablesController < ApplicationController
   # POST /tables.json
   def create
     @table = Table.new(table_params)
+    @table.waiter_id = @current_user.id
 
     respond_to do |format|
       if @table.save

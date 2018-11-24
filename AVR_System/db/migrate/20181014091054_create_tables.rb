@@ -5,6 +5,6 @@ class CreateTables < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_reference :tables, :waiters, index: true
+    add_reference :tables, :waiter, index: true
   end
 end

@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2018_10_14_091054) do
     t.integer "table_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "waiters_id"
-    t.index ["waiters_id"], name: "index_tables_on_waiters_id"
+    t.bigint "waiter_id"
+    t.index ["waiter_id"], name: "index_tables_on_waiter_id"
   end
 
   create_table "waiters", force: :cascade do |t|

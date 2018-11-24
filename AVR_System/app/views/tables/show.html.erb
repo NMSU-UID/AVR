@@ -7,7 +7,7 @@
 
 <p>
   <strong>Employee:</strong>
-  <%= @table.employee_id %>
+  <%= Waiter.find(@table.waiter_id).first_name %>
 </p>
 
 <%= link_to 'Edit', edit_table_path(@table) %> |
