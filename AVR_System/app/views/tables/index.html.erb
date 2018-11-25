@@ -9,17 +9,61 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
-    <% @tables.each do |table| %>
-      <tr>
-        <td><%= table.table_number %></td>
-        <td><%= link_to 'Show |', table %></td>
-        <td><%= link_to ' Edit |', edit_table_path(table) %></td>
-        <td><%= link_to ' Destroy', table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+
+  <canvas id="myCanvas" width="700" height="500" style="border: 1px solid #DADADA" >
+    Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+  <script>
+      let i, v;
+      let pos2 = 0;
+      let pos = 0;
+      let textPos = 0;
+      let textPos2 = 0;
+      let tableNum = 1;
+
+      for(i = 0; i < 3; i++) {
+
+          for(v = 0; v < 4; v++) {
+
+              let c = document.getElementById("myCanvas");
+              let ctx = c.getContext("2d");
+              ctx.beginPath();
+              ctx.fillStyle = "white";
+              ctx.font = "20px Geargia";
+              ctx.lineWidth = 10;
+              ctx.arc(100+pos2, 100+pos, 50, 0, 2 * Math.PI);
+              ctx.stroke();
+              ctx.fill();
+              ctx.beginPath();
+              ctx.fillStyle = "black";
+              ctx.fillText("Table " + tableNum.toString(), 60 + textPos, 100 + textPos2);
+
+
+              pos2+=150;
+              textPos+=150;
+              tableNum++;
+          }
+          pos+=150;
+          textPos2+=150;
+          pos2=0;
+          textPos=0;
+      }
+
+  </script>
+
   </tbody>
+ <!-- <tbody>
+  <%# @tables.each do |table| %>
+    <tr>
+      <td><%#= table.table_number %></td>
+      <td><%#= link_to 'Show |', table %></td>
+      <td><%#= link_to ' Edit |', edit_table_path(table) %></td>
+      <td><%#= link_to ' Destroy', table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <%# end %>
+  </tbody>-->
 </table>
 
 <br>
