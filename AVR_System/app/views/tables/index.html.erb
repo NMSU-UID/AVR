@@ -1,82 +1,21 @@
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag "table.js" %>
+<% end %>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Tables</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Table number</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<table class="tables_index">
   <tbody>
-
-<script>
-  function test() {
-      alert("Manage Table");
-      
-  }
-</script>
-
-  <svg width="700" height="500">
-    <circle onclick="test()" cx="100" cy="100" r="50" stroke="black" stroke-width="1" fill="green"  />
-    <text x="100" y="115" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">1</text>
-    <circle onclick="test()" cx="250" cy="100" r="50" stroke="black" stroke-width="1" fill="orange" />
-    <text x="250" y="115" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">2</text>
-    <circle onclick="test()" cx="400" cy="100" r="50" stroke="black" stroke-width="1" fill="red" />
-    <text x="400" y="115" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">3</text>
-    <circle onclick="test()" cx="550" cy="100" r="50" stroke="black" stroke-width="1" fill="grey" />
-    <text x="550" y="115" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">4</text>
-
-
-    <circle onclick="test()" cx="100" cy="250" r="50" stroke="black" stroke-width="1" fill="orange" />
-    <text x="100" y="265" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">5</text>
-    <circle onclick="test()" cx="250" cy="250" r="50" stroke="black" stroke-width="1" fill="orange" />
-    <text x="250" y="265" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">6</text>
-    <circle onclick="test()" cx="400" cy="250" r="50" stroke="black" stroke-width="1" fill="green" />
-    <text x="400" y="265" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">7</text>
-    <circle onclick="test()" cx="550" cy="250" r="50" stroke="black" stroke-width="1" fill="green" />
-    <text x="550" y="265" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">8</text>
-
-
-    <circle onclick="test()" cx="100" cy="400" r="50" stroke="black" stroke-width="1" fill="green" />
-    <text x="100" y="415" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">9</text>
-    <circle onclick="test()" cx="250" cy="400" r="50" stroke="black" stroke-width="1" fill="orange" />
-    <text x="250" y="415" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">10</text>
-    <circle onclick="test()" cx="400" cy="400" r="50" stroke="black" stroke-width="1" fill="red" />
-    <text x="400" y="415" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">11</text>
-    <circle onclick="test()" cx="550" cy="400" r="50" stroke="black" stroke-width="1" fill="grey" />
-    <text x="550" y="415" text-anchor="middle" fill="black" font-size="50px" font-family="Arial">12</text>
-
-    <rect x="10" y="5" width="100" height="25" stroke="black" stroke-width="1" fill="grey" />
-    <text x="60" y="22" text-anchor="middle" fill="black" font-size="20px" font-family="Arial">Hold</text>
-
-    <rect x= "120" y="5" width="100" height="25" stroke="black" stroke-width="1" fill="green" />
-    <text x="170" y="22" text-anchor="middle" fill="black" font-size="20px" font-family="Arial">Available</text>
-
-    <rect x= "230" y="5" width="100" height="25" stroke="black" stroke-width="1" fill="orange" />
-    <text x="280" y="22" text-anchor="middle" fill="black" font-size="20px" font-family="Arial">Occupied</text>
-
-    <rect x= "340" y="5" width="100" height="25" stroke="black" stroke-width="1" fill="Red" />
-    <text x="390" y="22" text-anchor="middle" fill="black" font-size="20px" font-family="Arial">Reserved</text>
-
-
-
-  </svg>
-
-  </tbody>
- <!-- <tbody>
-  <%# @tables.each do |table| %>
-    <tr>
-      <td><%#= table.table_number %></td>
-      <td><%#= link_to 'Show |', table %></td>
-      <td><%#= link_to ' Edit |', edit_table_path(table) %></td>
-      <td><%#= link_to ' Destroy', table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% @tables.each do |table| %>
+    <tr class="clickable-row" data-link="<%= edit_table_path(table) %>">
+      <td><%= table.table_number %><br>
+      <%= Waiter.find(table.waiter_id).first_name %></td>
     </tr>
-  <%# end %>
-  </tbody>-->
+  <% end %>
+  </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Table', new_table_path %>
