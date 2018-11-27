@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :menuitems
+  resources :categories
   resources :tables
   get 'sessions/new'
   resources :waiters

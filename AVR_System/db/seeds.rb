@@ -9,3 +9,18 @@
 Waiter.find_or_create_by!(first_name: "Robert", last_name: "Dale", pin: "1111", manager: 1)
 Waiter.find_or_create_by!(first_name: "Victor", last_name: "Lozoya", pin: "2222", manager: 0)
 Waiter.find_or_create_by!(first_name: "Andrew", last_name: "Baca", pin: "3333", manager: 0)
+
+Category.find_or_create_by!(name: "Chicken")
+Category.find_or_create_by!(name: "Steak")
+Category.find_or_create_by!(name: "Appetizer")
+Category.find_or_create_by!(name: "Seafood")
+Category.find_or_create_by!(name: "Sandwiches")
+Category.find_or_create_by!(name: "Asian")
+Category.find_or_create_by!(name: "BBQ")
+Category.find_or_create_by!(name: "Pasta")
+Category.find_or_create_by!(name: "Desserts")
+Category.find_or_create_by!(name: "Burgers")
+Category.find_or_create_by!(name: "Drinks")
+Category.find_or_create_by!(name: "Beer")
+Category.find_or_create_by!(name: "Alcohol")
+
