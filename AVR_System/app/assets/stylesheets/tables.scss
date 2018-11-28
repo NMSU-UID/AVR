@@ -19,6 +19,7 @@ table {
   border-left-style: solid;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 20px;
+
 }
 
 .tables_index td:last-child {
@@ -32,4 +33,53 @@ table {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
+  float: left;
+  width: 70%;
+}
+
+.table_flex{
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  height: 100px;
+}
+
+.new-table-button{
+  border: 1.5px solid black;
+  padding: 10px;
+  background-color: lightgrey;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+  border-radius: 20px 3px;
+}
+
+.side-nav-button{
+  float: right;
+}
+
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  //float: left;
+  width: 70%;
+}
+
+.items_flex{
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+
+.items_index td{
+  border: 1.5px solid black;
+  padding: 10px;
+  background-color: lightgrey;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 20px 3px;
 }

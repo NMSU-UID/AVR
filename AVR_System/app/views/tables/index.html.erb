@@ -6,12 +6,14 @@
 
 <h1>Tables</h1>
 
+<div class="side_by_side">
+
 <div class="all-tables">
 <% @tables.each do |table| %>
 <div class = "table_flex">
   <table class="tables_index">
     <tbody>
-      <tr class="clickable-row" data-link="<%= edit_table_path(table) %>">
+      <tr class="clickable-row" data-link="<%= table_path(table) %>">
         <td><%= table.table_number %><br>
           <%= Waiter.find(table.waiter_id).first_name %></td>
       </tr>
@@ -21,16 +23,20 @@
 </div>
     <% end %>
 </div>
-<!--<table class="tables_index">-->
-<!--  <tbody>-->
-  <%# @tables.each do |table| %>
-<!--    <tr class="clickable-row" data-link="<%#= edit_table_path(table) %>">-->
-<!--      <td><%#= table.table_number %><br>-->
-<!--      <%#= Waiter.find(table.waiter_id).first_name %></td>-->
-<!--    </tr>-->
-  <%# end %>
-<!--  </tbody>-->
-<!--</table>-->
-<!--<br>-->
 
-<%= link_to 'New Table', new_table_path %>
+<div class = "side-nav-button">
+  <div class = "new-table-button">
+    <%= link_to 'New Table', new_table_path %>
+  </div>
+  <div class = "new-table-button">
+    <p>
+      re-open table
+    </p>
+  </div>
+  <div class = "new-table-button">
+    <p>
+      close table
+    </p>
+  </div>
+</div>
+</div>

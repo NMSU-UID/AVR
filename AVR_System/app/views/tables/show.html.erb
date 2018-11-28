@@ -12,3 +12,17 @@
 
 <%= link_to 'Edit', edit_table_path(@table) %> |
 <%= link_to 'Back', tables_path %>
+
+<div class="categories">
+  <% @categories.each do |category| %>
+    <div class = "items_flex">
+      <table class="items_index">
+        <tbody>
+        <tr class="clickable-row" data-link="<%= edit_table_path(category) %>">
+          <td><%= category.name %></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  <% end %>
+</div>
