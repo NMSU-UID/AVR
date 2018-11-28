@@ -6,16 +6,31 @@
 
 <h1>Tables</h1>
 
-<table class="tables_index">
-  <tbody>
-  <% @tables.each do |table| %>
-    <tr class="clickable-row" data-link="<%= edit_table_path(table) %>">
-      <td><%= table.table_number %><br>
-      <%= Waiter.find(table.waiter_id).first_name %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
-<br>
+<div class="all-tables">
+<% @tables.each do |table| %>
+<div class = "table_flex">
+  <table class="tables_index">
+    <tbody>
+      <tr class="clickable-row" data-link="<%= edit_table_path(table) %>">
+        <td><%= table.table_number %><br>
+          <%= Waiter.find(table.waiter_id).first_name %></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+    <% end %>
+</div>
+<!--<table class="tables_index">-->
+<!--  <tbody>-->
+  <%# @tables.each do |table| %>
+<!--    <tr class="clickable-row" data-link="<%#= edit_table_path(table) %>">-->
+<!--      <td><%#= table.table_number %><br>-->
+<!--      <%#= Waiter.find(table.waiter_id).first_name %></td>-->
+<!--    </tr>-->
+  <%# end %>
+<!--  </tbody>-->
+<!--</table>-->
+<!--<br>-->
 
 <%= link_to 'New Table', new_table_path %>
