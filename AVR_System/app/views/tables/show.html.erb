@@ -25,7 +25,9 @@
       <table class="items_index">
         <tbody>
         <tr class="clickable-row" data-link="<%= edit_table_path(category) %>">
-          <td><%= category.name %></td>
+          <td>
+            <%= link_to image_tag("#{category.name}.png", class: "compress"), categories_path %>
+            <%= category.name %></td>
         </tr>
         </tbody>
       </table>
