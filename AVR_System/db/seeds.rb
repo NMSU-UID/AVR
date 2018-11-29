@@ -24,8 +24,6 @@ Category.find_or_create_by!(name: "Drinks")
 Category.find_or_create_by!(name: "Beer")
 Category.find_or_create_by!(name: "Alcohol")
 
-Menuitem.find_or_create_by!(name: "")
-
 (1..20).each do |i|
   Table.create!(table_number: i, waiter_id: i%2+1)
 end

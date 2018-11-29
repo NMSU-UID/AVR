@@ -10,6 +10,12 @@
   <%= Waiter.find(@table.waiter_id).first_name %>
 </p>
 
+<!--<p>-->
+  <%# @table_items.menuitem.each do |table_items| %>
+  <%# end %>
+<!--</p>-->
+
+
 <%= link_to 'Edit', edit_table_path(@table) %> |
 <%= link_to 'Back', tables_path %>
 

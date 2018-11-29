@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_27_184803) do
+ActiveRecord::Schema.define(version: 2018_11_29_052146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2018_11_27_184803) do
 
   create_table "menuitems", force: :cascade do |t|
     t.string "name"
+    t.decimal "price", precision: 10, scale: 2
     t.bigint "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -34,9 +35,16 @@ ActiveRecord::Schema.define(version: 2018_11_27_184803) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "waiter_id"
-    t.bigint "menuitem_id"
-    t.index ["menuitem_id"], name: "index_tables_on_menuitem_id"
     t.index ["waiter_id"], name: "index_tables_on_waiter_id"
+  end
+
+  create_table "tables_items_joins", force: :cascade do |t|
+    t.bigint "table_id"
+    t.bigint "menuitem_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["menuitem_id"], name: "index_tables_items_joins_on_menuitem_id"
+    t.index ["table_id"], name: "index_tables_items_joins_on_table_id"
   end
 
   create_table "waiters", force: :cascade do |t|
@@ -49,5 +57,4 @@ ActiveRecord::Schema.define(version: 2018_11_27_184803) do
   end
 
   add_foreign_key "menuitems", "categories"
-  add_foreign_key "tables", "menuitems"
 end

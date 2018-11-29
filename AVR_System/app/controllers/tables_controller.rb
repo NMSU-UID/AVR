@@ -16,6 +16,8 @@ class TablesController < ApplicationController
   # GET /tables/1.json
   def show
     @categories = Category.paginate(:page => params[:page], :per_page => 5)
+    @table_items = Table.joins(:menuitems)
+    pp @table_items
   end
 
   # GET /tables/new
