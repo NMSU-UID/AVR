@@ -4,7 +4,8 @@ class MenuitemsController < ApplicationController
   # GET /menuitems
   # GET /menuitems.json
   def index
-    @menuitems = Menuitem.all
+    @menuitems = Menuitem.all.where(category_id: params[:category_id])
+    pp @menuitems
   end
 
   # GET /menuitems/1
@@ -72,3 +73,4 @@ class MenuitemsController < ApplicationController
       params.require(:menuitem).permit(:name, :category_id)
     end
 end
+

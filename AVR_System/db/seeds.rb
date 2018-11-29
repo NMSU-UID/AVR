@@ -29,14 +29,60 @@ Category.find_or_create_by!(name: "Alcohol")
 end
 
 Menuitem.find_or_create_by!(name:"Sprite", price: 2.49, category_id:"11")
-Menuitem.find_or_create_by!(name:"Dr. Pepper", price: 2.49, category_id:"11")
-Menuitem.find_or_create_by!(name:"Coca Cola", price: 2.49, category_id:"11")
+Menuitem.find_or_create_by!(name:"DrPepper", price: 2.49, category_id:"11")
+Menuitem.find_or_create_by!(name:"Coke", price: 2.49, category_id:"11")
 Menuitem.find_or_create_by!(name:"Pepsi", price: 2.49, category_id:"11")
+Menuitem.find_or_create_by!(name:"Water", price: 2.00, category_id:"11")
+Menuitem.find_or_create_by!(name:"Coffee", price: 3.00, category_id:"11")
+Menuitem.find_or_create_by!(name:"Tea", price: 3.00, category_id:"11")
+Menuitem.find_or_create_by!(name:"Gatorade", price: 2.49, category_id:"11")
 
-Menuitem.find_or_create_by!(name:"Oreo Ice-Cream", price: 3.99, category_id:"9")
-Menuitem.find_or_create_by!(name:"Vanilla Ice-Cream", price: 3.99, category_id:"9")
-Menuitem.find_or_create_by!(name:"Chocolate Cake", price: 4.49, category_id:"9")
-Menuitem.find_or_create_by!(name:"Strawberry shortcake", price: 4.49, category_id:"9")
+Menuitem.find_or_create_by!(name:"Oreo_Ice_Cream", price: 3.99, category_id:"9")
+Menuitem.find_or_create_by!(name:"Vanilla_Ice_Cream", price: 3.99, category_id:"9")
+Menuitem.find_or_create_by!(name:"Chocolate_Cake", price: 4.49, category_id:"9")
+Menuitem.find_or_create_by!(name:"Strawberry_Shortcake", price: 4.49, category_id:"9")
+
+Menuitem.find_or_create_by!(name: "Teriaki_Chicken", price: 8.49, category_id: "6")
+Menuitem.find_or_create_by!(name: "Kung_Pao_Chicken", price: 8.49, category_id: "6")
+
+Menuitem.find_or_create_by!(name: "Ribeye", price: 19.49, category_id: "2")
+Menuitem.find_or_create_by!(name: "Sirloin", price: 14.49, category_id: "2")
+Menuitem.find_or_create_by!(name: "New_York_Strip", price: 20.49, category_id: "2")
+
+Menuitem.find_or_create_by!(name: "Nachos", price: 8.49, category_id: "3")
+Menuitem.find_or_create_by!(name: "Salad", price: 8.49, category_id: "3")
+
+Menuitem.find_or_create_by!(name: "Shrimp", price: 12.49, category_id: "4")
+Menuitem.find_or_create_by!(name: "Lobster", price: 15.49, category_id: "4")
+
+Menuitem.find_or_create_by!(name: "Turkey_Sandwich", price: 8.49, category_id: "5")
+Menuitem.find_or_create_by!(name: "Cold_Cut", price: 8.49, category_id: "5")
+Menuitem.find_or_create_by!(name: "Club", price: 8.49, category_id: "5")
+Menuitem.find_or_create_by!(name: "Chicken_Sandwich", price: 8.49, category_id: "5")
+
+Menuitem.find_or_create_by!(name: "Ribs", price: 8.49, category_id: "7")
+Menuitem.find_or_create_by!(name: "Brisket", price: 8.49, category_id: "7")
+
+Menuitem.find_or_create_by!(name: "Rotisserie", price: 8.49, category_id: "1")
+Menuitem.find_or_create_by!(name: "Chicken_Strips", price: 8.49, category_id: "1")
+
+Menuitem.find_or_create_by!(name: "Spaghetti", price: 8.49, category_id: "8")
+Menuitem.find_or_create_by!(name: "Alfredo", price: 8.49, category_id: "8")
+Menuitem.find_or_create_by!(name: "Mac_And_Cheese", price: 8.49, category_id: "8")
+
+Menuitem.find_or_create_by!(name: "Cheeseburger", price: 9.49, category_id: "10")
+Menuitem.find_or_create_by!(name: "Western", price: 10.49, category_id: "10")
+Menuitem.find_or_create_by!(name: "Big_Mac", price: 10.49, category_id: "10")
+
+Menuitem.find_or_create_by!(name: "Coors", price: 8.49, category_id: "12")
+Menuitem.find_or_create_by!(name: "Bud", price: 8.49, category_id: "12")
+
+Menuitem.find_or_create_by!(name: "Hennessy", price: 8.49, category_id: "13")
+Menuitem.find_or_create_by!(name: "Vodka", price: 8.49, category_id: "13")
+
+
+
+
 
 (1..5).each do |i|
   TablesItemsJoin.create!(table_id: i, menuitem_id: i)

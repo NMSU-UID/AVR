@@ -24,9 +24,9 @@
     <div class = "items_flex">
       <table class="items_index">
         <tbody>
-        <tr class="clickable-row" data-link="<%= edit_table_path(category) %>">
+        <tr class="clickable-row" data-link="<%= "/menuitems?category_id=#{category.id}" %>">
           <td>
-            <%= link_to image_tag("#{category.name}.png", class: "compress"), categories_path %>
+            <%= link_to image_tag("#{category.name}.png", class: "compress"), "/menuitems?category_id=#{category.id}" %>
             <%= category.name %></td>
         </tr>
         </tbody>
