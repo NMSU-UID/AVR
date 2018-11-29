@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7a7d071-61c9-4fe7-bdb6-d07974a67488" name="Default Changelist" comment="" />
+    <list default="true" id="c7a7d071-61c9-4fe7-bdb6-d07974a67488" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/AVR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AVR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AVR_System/app/views/tables/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/AVR_System/app/views/tables/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +24,143 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1220545976">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="erb" value="4" />
+          <entry key="js" value="1" />
+          <entry key="key" value="1" />
+          <entry key="rb" value="1" />
+          <entry key="scss" value="2" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="RHTML" value="4" />
+          <entry key="Ruby" value="1" />
+          <entry key="SCSS" value="2" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="erb" value="474" />
+          <entry key="rb" value="176" />
+          <entry key="scss" value="574" />
+          <entry key="yml" value="30" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="RHTML" value="474" />
+          <entry key="Ruby" value="176" />
+          <entry key="SCSS" value="574" />
+          <entry key="YAML" value="30" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="902">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/app/assets/javascripts/table.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1485">
+              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="229" column="21" lean-forward="true" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1102">
+              <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVR_System/config/master.key">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/AVR_System/config/master.key" />
+        <option value="$PROJECT_DIR$/AVR_System/config/database.yml" />
+        <option value="$PROJECT_DIR$/AVR_System/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/AVR_System/app/views/tables/index.html.erb" />
+        <option value="$PROJECT_DIR$/AVR_System/app/views/tables/edit.html.erb" />
+        <option value="$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb" />
+        <option value="$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -33,11 +173,10 @@
       <path value="$PROJECT_DIR$/AVR_System/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="3121" />
-    <option name="y" value="351" />
-    <option name="width" value="2181" />
-    <option name="height" value="1413" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1922" />
+    <option name="width" value="1918" />
+    <option name="height" value="2104" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -51,6 +190,55 @@
               <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVR" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVR" type="462c0819:PsiDirectoryNode" />
+              <item name="AVR_System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVR" type="462c0819:PsiDirectoryNode" />
+              <item name="AVR_System" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVR" type="462c0819:PsiDirectoryNode" />
+              <item name="AVR_System" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVR" type="462c0819:PsiDirectoryNode" />
+              <item name="AVR_System" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVR" type="462c0819:PsiDirectoryNode" />
+              <item name="AVR_System" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVR" type="462c0819:PsiDirectoryNode" />
+              <item name="AVR_System" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVR" type="462c0819:PsiDirectoryNode" />
+              <item name="AVR_System" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tables" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -60,9 +248,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AVR_System" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AVR_System/app/assets/images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,6 +269,7 @@
       </list>
     </option>
   </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -87,23 +281,20 @@
       <option name="presentableId" value="Default" />
       <updated>1543248547687</updated>
       <workItem from="1543248548813" duration="551000" />
+      <workItem from="1543456137133" duration="23456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="551000" />
+    <option name="totallyTimeSpent" value="24007000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3121" y="351" width="2181" height="1413" extended-state="4" />
+    <frame x="0" y="-2" width="3840" height="2106" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24988279" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12346666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -111,10 +302,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49973333" weight="0.32920924" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5002667" side_tool="true" weight="0.32920924" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,5 +318,62 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AVR_System/config/master.key">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/assets/javascripts/table.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="229" column="21" lean-forward="true" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

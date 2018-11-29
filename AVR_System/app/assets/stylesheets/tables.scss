@@ -180,6 +180,7 @@ h1 {
   margin-top: 8px;
 }
 
+
 .table_receipt {
   border: 2px solid black;
   float: left;
@@ -195,5 +196,59 @@ h1 {
 
 #receipt_table th {
   background-color: #E8E3E3;
+
+.dash-board{
+  float: left;
+  width: 600px;
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 80px;
+
+}
+
+.dash-buttons{
+  border: 1.5px solid black;
+  padding: 10px;
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+
+#send{
+  margin-left: 30px;
+  margin-top: 12px;
+  text-align: center;
+  font-size: larger;
+  background-color: green;
+  font-weight: bolder;
+}
+
+#close{
+  margin-left: 180px;
+  margin-top: -50px;
+  text-align: center;
+  font-size: larger;
+  background-color: red;
+  font-weight: bolder;
+}
+
+#mods{
+  margin-left: 320px;
+  margin-top: -50px;
+  text-align: center;
+  font-size: larger;
+  background-color: orange;
+  font-weight: bolder;
+}
+
+#receipt{
+  margin-left: 460px;
+  margin-top: -50px;
+  text-align: center;
+  font-size: larger;
+  background-color: cornflowerblue;
+  font-weight: bolder;
+
 }
 
