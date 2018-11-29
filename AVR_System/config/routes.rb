@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mods
   resources :menuitems
   resources :categories
   resources :tables
