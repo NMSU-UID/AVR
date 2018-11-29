@@ -10,84 +10,76 @@
   </p>
 </div>
 
-<div class="main_table">
-  <div class="table_receipt">
-    <table id="receipt_table">
-      <tr>
-        <th>Item</th>
-        <th>Price</th>
-      </tr>
-      <% @table.menuitems.each do |item| %>
+<div class="row">
+  <div class="main_table">
+    <div class="table_receipt">
+      <table id="receipt_table">
         <tr>
-          <td><%= item.name %></td>
-          <td><%= item.price %></td>
+          <th>Item</th>
+          <th>Price</th>
         </tr>
-      <% end %>
-      <tr>
-        <td>Total:</td>
-        <td><%= @total %></td>
-      </tr>
-    </table>
-  </div>
-
-
-
-<!--  <%#= link_to 'Edit', edit_table_path(@table) %> |-->
-  <%#= link_to 'Back', tables_path %>
-
-
-  <div class="categories">
-    <% @categories.each do |category| %>
-      <div class = "items_flex">
-        <table class="items_index">
-          <tbody>
-          <tr class="clickable-row" data-link="<%= "/menuitems/menuitembuttons?category_id=#{category.id}" %>">
-            <td>
-              <%= link_to image_tag("#{category.name}.png", class: "compress"), "/menuitems/menuitembuttons?category_id=#{category.id}" %>
-              <%= category.name %></td>
+        <% @table.menuitems.each do |item| %>
+          <tr>
+            <td><%= item.name %></td>
+            <td><%= item.price %></td>
           </tr>
-          </tbody>
-        </table>
-      </div>
-    <% end %>
-    <%= will_paginate @categories %>
+        <% end %>
+        <tr>
+          <td>Total:</td>
+          <td><%= @total %></td>
+        </tr>
+      </table>
+    </div>
+
+
+
+  <!--  <%#= link_to 'Edit', edit_table_path(@table) %> |-->
+    <%#= link_to 'Back', tables_path %>
+
+
+    <div class="categories">
+      <% @categories.each do |category| %>
+        <div class = "items_flex">
+          <table class="items_index">
+            <tbody>
+            <tr class="clickable-row" data-link="<%= "/menuitems/menuitembuttons?category_id=#{category.id}" %>">
+              <td>
+                <%= link_to image_tag("#{category.name}.png", class: "compress"), "/menuitems/menuitembuttons?category_id=#{category.id}" %>
+                <%= category.name %></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      <% end %>
+      <%= will_paginate @categories %>
+    </div>
+
   </div>
-
 </div>
 
-
-<div class = "row">
-<div class = "dash-board" >
-
-  <ul>
-    <li>
-      <div class = "dash-buttons" id="send">
-      <p>Send</p>
-      </div>
-    </li>
-    <li>
-      <div class = "dash-buttons" id="close">
-        <p>Close</p>
-      </div>
-    </li>
-    <li>
-      <div class = "dash-buttons" id="mods">
-        <p>Mods</p>
-      </div>
-    </li>
-    <li>
-      <div class = "dash-buttons" id="receipt">
-        <p>Receipt</p>
-      </div>
-    </li>
-  </ul>
-
-</div>
-
-
-  <%#= render partial:  %>
-
-</div>
-
+  <div class = "row">
+    <ul>
+      <li>
+        <div class = "dash-buttons" id="send">
+        <p>Send</p>
+        </div>
+      </li>
+      <li>
+        <div class = "dash-buttons" id="close">
+          <p>Close</p>
+        </div>
+      </li>
+      <li>
+        <div class = "dash-buttons" id="mods">
+          <p>Mods</p>
+        </div>
+      </li>
+      <li>
+        <div class = "dash-buttons" id="receipt">
+          <p>Receipt</p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 
