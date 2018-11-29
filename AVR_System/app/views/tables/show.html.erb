@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="top_table_info">
+  <div class="space">
   <strong>Table number:</strong>
   <%= @table.table_number %>
 
@@ -8,6 +9,7 @@
     <strong>Employee:</strong>
     <%= Waiter.find(@table.waiter_id).first_name %>
   </p>
+  </div>
 </div>
 
 <div class="row">
@@ -50,8 +52,11 @@
             </tbody>
           </table>
         </div>
+
       <% end %>
-      <%= will_paginate @categories %>
+      <div class="space">
+        <%= will_paginate @categories %>
+      </div>
     </div>
 
   </div>

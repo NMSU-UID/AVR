@@ -98,13 +98,15 @@ table {
   justify-content: flex-start;
   align-content: flex-start;
   float: right;
+  background-color: blanchedalmond;
+  border: 1.5px solid black;
 }
 
 .items_flex{
   flex: 1 0 20%; /* explanation below */
-  margin: 15px;
-  height: 100px;
-  max-width: 100px;
+  margin: 25px;
+  height: 70px;
+  max-width: 120px;
 }
 
 
@@ -113,7 +115,7 @@ table {
   padding: 10px;
   background-color: lightgrey;
   width: 120px;
-  height: 120px;
+  height: 100px;
   margin-bottom: 30px;
   border-radius: 20px 3px;
 }
@@ -171,8 +173,8 @@ h1 {
   border-radius: 20px;
 }
 .compress{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .actions {
@@ -184,7 +186,8 @@ h1 {
   border: 2px solid black;
   float: left;
   width: 350px;
-  height: 600px;
+  height: 655px;
+  margin-right: 10px;
 }
 
 #receipt_table {
@@ -263,3 +266,7 @@ ul > li {
   padding-bottom: 45px;
 }
 
+.space{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
