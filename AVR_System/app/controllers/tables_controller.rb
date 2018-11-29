@@ -15,7 +15,7 @@ class TablesController < ApplicationController
   # GET /tables/1
   # GET /tables/1.json
   def show
-    @categories = Category.all
+    @categories = Category.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /tables/new

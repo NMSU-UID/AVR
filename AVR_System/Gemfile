@@ -35,6 +35,7 @@ gem 'bootstrap'
 gem 'sprockets', '~> 4.0.0.beta'
 gem 'simple-navigation'
 gem 'jquery-rails'
+gem 'will_paginate'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

@@ -64,10 +64,11 @@ table {
 
 .categories{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  //float: left;
+  float: right;
   width: 70%;
 }
 
