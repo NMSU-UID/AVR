@@ -61,10 +61,19 @@ table {
   height: 120px;
   margin-bottom: 15px;
   border-radius: 20px 3px;
+  a:link{
+    color:black;
+  }
+  a:active{
+    color: black;
+  }
 }
 
 .side-nav-button{
   float: right;
+  a:link{
+    color: black;
+  }
 }
 
 .categories{
@@ -93,4 +102,15 @@ table {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 20px 3px;
+}
+
+#addtable{
+  background-color: cornflowerblue;
+  a:link{
+    color: black;
+  }
+
+  a:active{
+    color: black;
+  }
 }
