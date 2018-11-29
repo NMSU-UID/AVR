@@ -104,7 +104,6 @@ table {
   flex: 1 0 20%; /* explanation below */
   margin: 15px;
   height: 100px;
-  margin-bottom: 30px;
   max-width: 100px;
 }
 
@@ -258,5 +257,9 @@ ul > li {
   zoom:1;
   *display:inline;
   /* this fix is needed for IE7- */
+}
+
+.main_table {
+  padding-bottom: 45px;
 }
 
