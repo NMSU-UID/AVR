@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7a7d071-61c9-4fe7-bdb6-d07974a67488" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AVR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AVR.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AVR_System/app/views/tables/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/AVR_System/app/views/tables/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,17 +50,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="erb" value="474" />
+          <entry key="erb" value="511" />
           <entry key="rb" value="176" />
-          <entry key="scss" value="574" />
+          <entry key="scss" value="696" />
           <entry key="yml" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="RHTML" value="474" />
+          <entry key="RHTML" value="511" />
           <entry key="Ruby" value="176" />
-          <entry key="SCSS" value="574" />
+          <entry key="SCSS" value="696" />
           <entry key="YAML" value="30" />
         </counts>
       </usages-collector>
@@ -94,11 +91,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+            <state relative-caret-position="1456">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -108,11 +105,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="229" column="21" lean-forward="true" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
+            <state relative-caret-position="1539">
+              <caret line="264" column="1" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -173,7 +170,7 @@
       <path value="$PROJECT_DIR$/AVR_System/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="1922" />
     <option name="width" value="1918" />
     <option name="height" value="2104" />
@@ -281,18 +278,18 @@
       <option name="presentableId" value="Default" />
       <updated>1543248547687</updated>
       <workItem from="1543248548813" duration="551000" />
-      <workItem from="1543456137133" duration="23456000" />
+      <workItem from="1543456137133" duration="25692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24007000" />
+    <option name="totallyTimeSpent" value="26243000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="3840" height="2106" extended-state="6" />
+    <frame x="1922" y="0" width="1918" height="2104" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12346666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25328228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -361,17 +358,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        <state relative-caret-position="1539">
+          <caret line="264" column="1" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVR_System/app/assets/stylesheets/tables.scss">
+    <entry file="file://$PROJECT_DIR$/AVR_System/app/views/tables/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="229" column="21" lean-forward="true" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
+        <state relative-caret-position="1456">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>

@@ -196,9 +196,10 @@ h1 {
 
 #receipt_table th {
   background-color: #E8E3E3;
-
+}
 .dash-board{
-  float: left;
+  margin-left: 300px;
+  margin-top: 650px;
   width: 600px;
   background-color: lightgray;
   border-radius: 20px;
@@ -212,12 +213,14 @@ h1 {
   width: 120px;
   height: 50px;
   border-radius: 20px;
+  //margin-top: 10px;
+  align-content: center;
 }
 
 
 #send{
   margin-left: 30px;
-  margin-top: 12px;
+  margin-top: -10px;
   text-align: center;
   font-size: larger;
   background-color: green;
@@ -226,7 +229,7 @@ h1 {
 
 #close{
   margin-left: 180px;
-  margin-top: -50px;
+ // margin-top: -10px;
   text-align: center;
   font-size: larger;
   background-color: red;
@@ -235,20 +238,29 @@ h1 {
 
 #mods{
   margin-left: 320px;
-  margin-top: -50px;
+  //margin-top: -10px;
   text-align: center;
   font-size: larger;
   background-color: orange;
   font-weight: bolder;
+
 }
 
 #receipt{
   margin-left: 460px;
-  margin-top: -50px;
+ // margin-top: -10px;
   text-align: center;
   font-size: larger;
   background-color: cornflowerblue;
   font-weight: bolder;
 
+}
+
+ul > li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  zoom:1;
+  *display:inline;
+  /* this fix is needed for IE7- */
 }
 
