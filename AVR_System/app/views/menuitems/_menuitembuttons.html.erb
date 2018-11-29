@@ -1,8 +1,16 @@
-<H1>This is a partial test.</H1>
+<%= stylesheet_link_tag "/menuitems" %>
 
 <% @cat_id = Menuitem.all.where(category_id: @cat_id) %>
-
-<% @cat_id.each do |item| %>
-  <%= item.name %>
-  <%= item.price %>
-<% end %>
+<div class="fooditems">
+  <% @cat_id.each do |item| %>
+    <div class = "food_flex">
+      <table class="food_index">
+        <tbody>
+         <%= item.name %>
+         <%= item.price %><br>
+         </tr>
+        </tbody>
+      </table>
+    </div>
+  <% end %>
+</div>

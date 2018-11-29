@@ -1,3 +1,42 @@
 // Place all the styles related to the menuitems controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.fooditems{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.food_flex{
+  flex: 1 0 20%; /* explanation below */
+  margin-bottom: 30px;
+  height: 100px;
+  text-align: center;
+}
+
+.food_index td {
+  border: solid 2px #000;
+  border-style: solid none;
+  padding: 30px;
+  background-color: lightgreen;
+  height: 50px;
+  width: 80px;
+}
+
+.food_index td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.food_index td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
