@@ -30,3 +30,12 @@ Menuitem.find_or_create_by!(name: "")
   Table.create!(table_number: i, waiter_id: i%2+1)
 end
 
+Menuitem.find_or_create_by!(name:"Sprite", category_id:"11")
+Menuitem.find_or_create_by!(name:"Dr. Pepper", category_id:"11")
+Menuitem.find_or_create_by!(name:"Coca Cola", category_id:"11")
+Menuitem.find_or_create_by!(name:"Pepsi", category_id:"11")
+
+Menuitem.find_or_create_by!(name:"Oreo Ice-Cream", category_id:"9")
+Menuitem.find_or_create_by!(name:"Vanilla Ice-Cream", category_id:"9")
+Menuitem.find_or_create_by!(name:"Chocolate Cake", category_id:"9")
+Menuitem.find_or_create_by!(name:"Strawberry shortcake", category_id:"9")
