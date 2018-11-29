@@ -17,15 +17,15 @@ table {
 
 .tables_index td:first-child {
   border-left-style: solid;
-  border-top-left-radius: 30px;
+  border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 
 }
 
 .tables_index td:last-child {
   border-right-style: solid;
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .all-tables{
@@ -39,7 +39,7 @@ table {
 
 .table_flex{
   flex: 1 0 21%; /* explanation below */
-  margin: 5px;
+  margin-bottom: 20px;
   height: 100px;
 }
 

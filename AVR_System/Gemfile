@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'bootstrap-sass'
+gem 'bootstrap'
 gem 'sprockets', '~> 4.0.0.beta'
 gem 'simple-navigation'
 gem 'jquery-rails'
