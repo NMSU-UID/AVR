@@ -41,9 +41,9 @@
       <div class = "items_flex">
         <table class="items_index">
           <tbody>
-          <tr class="clickable-row" data-link="<%= "/menuitems?category_id=#{category.id}" %>">
+          <tr class="clickable-row" data-link="<%= "/menuitems/menuitembuttons?category_id=#{category.id}" %>">
             <td>
-              <%= link_to image_tag("#{category.name}.png", class: "compress"), "/menuitems?category_id=#{category.id}" %>
+              <%= link_to image_tag("#{category.name}.png", class: "compress"), "/menuitems/menuitembuttons?category_id=#{category.id}" %>
               <%= category.name %></td>
           </tr>
           </tbody>
@@ -87,3 +87,7 @@
 
 </div>
 
+
+  <%#= render partial:  %>
+
+</div>

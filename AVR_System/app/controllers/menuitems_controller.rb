@@ -8,6 +8,11 @@ class MenuitemsController < ApplicationController
     pp @menuitems
   end
 
+  # def _menuitembuttons
+  #   @menuitems = Menuitem.all.where(category_id: params[:category_id])
+  #   pp @menuitems
+  # end
+
   # GET /menuitems/1
   # GET /menuitems/1.json
   def show
