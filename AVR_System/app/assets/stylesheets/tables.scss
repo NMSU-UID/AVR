@@ -106,6 +106,41 @@ table {
   border-radius: 20px 3px;
 }
 
+
+#center {
+  min-width: 30%;
+  max-width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: 1px solid darkgray;
+  background-color: #f0f0f0;
+}
+
+#center p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+hr {
+  border-color: gray;
+  color: gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+.centers {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.linkleft {
+  float: left;
+}
+
 #addtable{
   background-color: cornflowerblue;
   a:link{
@@ -117,7 +152,9 @@ table {
   }
 }
 
+
 #navBack{
   background-color: lightgray;
   border-radius: 20px;
 }
+
