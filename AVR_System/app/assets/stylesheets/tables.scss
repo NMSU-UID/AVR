@@ -6,6 +6,8 @@ table {
   border-collapse: separate;
   border-spacing: 0 10px;
   margin-top: -10px; /* correct offset on first border spacing if desired */
+  height: 50px;
+  text-align: center;
 }
 
 .tables_index td {
@@ -13,6 +15,8 @@ table {
   border-style: solid none;
   padding: 30px;
   background-color: lightgreen;
+  height: 50px;
+  width: 100px;
 }
 
 .tables_index td:first-child {
@@ -38,16 +42,15 @@ table {
   justify-content: flex-start;
   align-content: flex-start;
   float: left;
-  width: 70%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 550px;
 }
 
 .table_flex{
-  flex: 1 0 21%; /* explanation below */
+  flex: 1 0 15%; /* explanation below */
   margin-bottom: 20px;
   height: 100px;
   text-align: center;
-  font-weight: bold;
 }
 
 .new-table-button{

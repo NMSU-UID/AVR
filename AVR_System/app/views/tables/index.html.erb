@@ -4,17 +4,18 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Tables</h1>
+<h1 align="center">Tables</h1>
 
 <div class="side_by_side">
 
 <div class="all-tables">
 <% @tables.each do |table| %>
+
 <div class = "table_flex">
   <table class="tables_index">
     <tbody>
       <tr class="clickable-row" data-link="<%= table_path(table) %>">
-        <td><%= table.table_number %><br>
+        <td><strong><%= table.table_number %><br></strong>
           <%= Waiter.find(table.waiter_id).first_name %></td>
       </tr>
 
