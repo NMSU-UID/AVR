@@ -5,9 +5,7 @@
 table {
   border-collapse: separate;
   border-spacing: 0 10px;
-  margin-top: -10px; /* correct offset on first border spacing if desired */
-  height: 50px;
-  text-align: center;
+  margin-top: -10px;
 }
 
 .tables_index td {
@@ -34,24 +32,31 @@ table {
 
 .side_by_side{
   max-width: 900px;
+  height: 425px;
   margin: auto;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 .all-tables{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-between;
   float: left;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
+  padding: 10px;
 }
 
 .table_flex{
-  flex: 1 0 10%; /* explanation below */
-  margin-bottom: 20px;
+  flex: 1 0 20%; /* explanation below */
+  margin-bottom: 30px;
   height: 100px;
   text-align: center;
+}
 
+.all-tables::after {
+  content: "";
+  margin-right: auto;
 }
 
 .new-table-button{
@@ -68,12 +73,21 @@ table {
   a:active{
     color: black;
   }
+  a:visited {
+    color: #000;
+  }
 }
 
 .side-nav-button{
   float: right;
+  padding: 10px;
+  height: 400px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: -10px;
   a:link{
     color: black;
+    text-decoration: none;
   }
 }
 
@@ -129,6 +143,8 @@ hr {
 
 h1 {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: -15px;
 }
 
 .centers {
@@ -152,7 +168,6 @@ h1 {
   }
 }
 
-
 #navBack{
   background-color: lightgray;
   border-radius: 20px;
@@ -160,5 +175,9 @@ h1 {
 .compress{
   height: 50px;
   width: 50px;
+}
+
+.actions {
+  margin-top: 8px;
 }
 

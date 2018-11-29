@@ -8,36 +8,34 @@
 
 <div class="side_by_side">
 
-<div class="all-tables">
-<% @tables.each do |table| %>
-
-<div class = "table_flex">
-  <table class="tables_index">
-    <tbody>
-      <tr class="clickable-row" data-link="<%= table_path(table) %>">
-        <td><strong><%= table.table_number %><br></strong>
-          <%= Waiter.find(table.waiter_id).first_name %></td>
-      </tr>
-
-    </tbody>
-  </table>
-</div>
-    <% end %>
-</div>
-
-<div class = "side-nav-button" id="navBack">
-  <div class = "new-table-button" id="addtable">
-    <%= link_to 'New Table', new_table_path  %>
+  <div class="all-tables">
+  <% @tables.each do |table| %>
+  <div class = "table_flex">
+    <table class="tables_index">
+      <tbody>
+        <tr class="clickable-row" data-link="<%= table_path(table) %>">
+          <td><strong><%= table.table_number %><br></strong>
+            <%= Waiter.find(table.waiter_id).first_name %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class = "new-table-button" >
-    <p>
-      re-open table
-    </p>
+  <% end %>
   </div>
-  <div class = "new-table-button">
-    <p>
-      close table
-    </p>
+
+  <div class = "side-nav-button" id="navBack">
+    <div class = "new-table-button" id="addtable">
+      <%= link_to 'New Table', new_table_path  %>
+    </div>
+    <div class = "new-table-button" >
+      <p>
+        re-open table
+      </p>
+    </div>
+    <div class = "new-table-button">
+      <p>
+        close table
+      </p>
+    </div>
   </div>
-</div>
 </div>

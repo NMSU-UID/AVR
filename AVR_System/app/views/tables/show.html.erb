@@ -10,10 +10,10 @@
   <%= Waiter.find(@table.waiter_id).first_name %>
 </p>
 
-<!--<p>-->
-  <%# @table_items.menuitem.each do |table_items| %>
-  <%# end %>
-<!--</p>-->
+<% @table.menuitems.each do |item| %>
+  <%= item.name %>
+  <%= item.price %>
+<% end %>
 
 
 <%= link_to 'Edit', edit_table_path(@table) %> |

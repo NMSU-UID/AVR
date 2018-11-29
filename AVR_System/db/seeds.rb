@@ -25,15 +25,23 @@ Category.find_or_create_by!(name: "Beer")
 Category.find_or_create_by!(name: "Alcohol")
 
 (1..20).each do |i|
-  Table.create!(table_number: i, waiter_id: i%2+1)
+  Table.create!(table_number: i, waiter_id: (i%3)+1)
 end
 
-Menuitem.find_or_create_by!(name:"Sprite", category_id:"11")
-Menuitem.find_or_create_by!(name:"Dr. Pepper", category_id:"11")
-Menuitem.find_or_create_by!(name:"Coca Cola", category_id:"11")
-Menuitem.find_or_create_by!(name:"Pepsi", category_id:"11")
+Menuitem.find_or_create_by!(name:"Sprite", price: 2.49, category_id:"11")
+Menuitem.find_or_create_by!(name:"Dr. Pepper", price: 2.49, category_id:"11")
+Menuitem.find_or_create_by!(name:"Coca Cola", price: 2.49, category_id:"11")
+Menuitem.find_or_create_by!(name:"Pepsi", price: 2.49, category_id:"11")
 
-Menuitem.find_or_create_by!(name:"Oreo Ice-Cream", category_id:"9")
-Menuitem.find_or_create_by!(name:"Vanilla Ice-Cream", category_id:"9")
-Menuitem.find_or_create_by!(name:"Chocolate Cake", category_id:"9")
-Menuitem.find_or_create_by!(name:"Strawberry shortcake", category_id:"9")
+Menuitem.find_or_create_by!(name:"Oreo Ice-Cream", price: 3.99, category_id:"9")
+Menuitem.find_or_create_by!(name:"Vanilla Ice-Cream", price: 3.99, category_id:"9")
+Menuitem.find_or_create_by!(name:"Chocolate Cake", price: 4.49, category_id:"9")
+Menuitem.find_or_create_by!(name:"Strawberry shortcake", price: 4.49, category_id:"9")
+
+(1..5).each do |i|
+  TablesItemsJoin.create!(table_id: i, menuitem_id: i)
+end
+
+(1..5).each do |i|
+  TablesItemsJoin.create!(table_id: i, menuitem_id: (i%5)+ 1)
+end
