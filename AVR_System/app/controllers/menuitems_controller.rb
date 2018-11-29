@@ -8,10 +8,9 @@ class MenuitemsController < ApplicationController
     pp @menuitems
   end
 
-  # def _menuitembuttons
-  #   @menuitems = Menuitem.all.where(category_id: params[:category_id])
-  #   pp @menuitems
-  # end
+  def menuitembuttons
+    @menuitems = Menuitem.all
+  end
 
   # GET /menuitems/1
   # GET /menuitems/1.json
@@ -75,7 +74,7 @@ class MenuitemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def menuitem_params
-      params.require(:menuitem).permit(:name, :category_id)
+      params.require(:menuitem).permit(:name, :category_id, :cat_id)
     end
 end
 

@@ -1,6 +1,8 @@
 <H1>This is a partial test.</H1>
 
-<%= @menuitems.each do |item| %>
+<% @cat_id = Menuitem.all.where(category_id: @cat_id) %>
+
+<% @cat_id.each do |item| %>
   <%= item.name %>
-  <%= item.price%>
+  <%= item.price %>
 <% end %>
