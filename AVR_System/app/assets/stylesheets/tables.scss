@@ -98,7 +98,6 @@ table {
   justify-content: flex-start;
   align-content: flex-start;
   float: right;
-  width: 70%;
 }
 
 .items_flex{
@@ -179,5 +178,22 @@ h1 {
 
 .actions {
   margin-top: 8px;
+}
+
+.table_receipt {
+  border: 2px solid black;
+  float: left;
+  width: 350px;
+  height: 600px;
+}
+
+#receipt_table {
+  margin: 0;
+  border-spacing: 0;
+  width: inherit;
+}
+
+#receipt_table th {
+  background-color: #E8E3E3;
 }
 
