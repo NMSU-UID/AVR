@@ -16,7 +16,7 @@ table {
   padding: 30px;
   background-color: lightgreen;
   height: 50px;
-  width: 100px;
+  width: 80px;
 }
 
 .tables_index td:first-child {
@@ -33,7 +33,7 @@ table {
 }
 
 .side_by_side{
-  max-width: 700px;
+  max-width: 900px;
   margin: auto;
 }
 .all-tables{
@@ -43,24 +43,25 @@ table {
   align-content: flex-start;
   float: left;
   width: 100%;
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .table_flex{
-  flex: 1 0 15%; /* explanation below */
+  flex: 1 0 10%; /* explanation below */
   margin-bottom: 20px;
   height: 100px;
   text-align: center;
+
 }
 
 .new-table-button{
   border: 1.5px solid black;
   padding: 10px;
-  background-color: lightgrey;
+  background-color: white;
   width: 120px;
-  height: 120px;
-  margin-bottom: 15px;
-  border-radius: 20px 3px;
+  height: 50px;
+  margin-bottom: 90px;
+  border-radius: 20px;
   a:link{
     color:black;
   }
@@ -87,10 +88,11 @@ table {
 }
 
 .items_flex{
-  flex: 1 0 21%; /* explanation below */
-  margin: 5px;
+  flex: 1 0 20%; /* explanation below */
+  margin: 15px;
   height: 100px;
   margin-bottom: 30px;
+  max-width: 100px;
 }
 
 
@@ -113,4 +115,9 @@ table {
   a:active{
     color: black;
   }
+}
+
+#navBack{
+  background-color: lightgray;
+  border-radius: 20px;
 }
