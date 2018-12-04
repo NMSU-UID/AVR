@@ -13,12 +13,20 @@
 
   <tbody>
     <% @mods.each do |mod| %>
+
       <tr>
-        <td><%= mod.name %></td>
-        <td><%= mod.flavor %></td>
-        <td><%= link_to 'Show', mod %></td>
-        <td><%= link_to 'Edit', edit_mod_path(mod) %></td>
-        <td><%= link_to 'Destroy', mod, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        <td><%if mod.name == 'Cheese' %>
+            <%= mod.name %>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><%= mod.flavor %>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <!--    <td><%#= link_to 'Show', mod %></td>
+        <td><%#= link_to 'Edit', edit_mod_path(mod) %></td>
+        <td><%#= link_to 'Destroy', mod, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+        <td><label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label></td>
+            <%end %>
       </tr>
     <% end %>
   </tbody>

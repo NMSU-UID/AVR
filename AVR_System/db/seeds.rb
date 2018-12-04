@@ -95,7 +95,7 @@ end
 
 Mod.find_or_create_by!(name: "Cheese", flavor: "American")
 Mod.find_or_create_by!(name: "Cheese", flavor: "Cheddar")
-Mod.find_or_create_by!(name: "Pickles", flavor: "Hamburger Slices")
+Mod.find_or_create_by!(name: "Pickles", flavor: "")
 Mod.find_or_create_by!(name: "Onions", flavor: "Red")
 Mod.find_or_create_by!(name: "Chile Sauce", flavor: "Red")
 Mod.find_or_create_by!(name: "Chile Sauce", flavor: "Green")
