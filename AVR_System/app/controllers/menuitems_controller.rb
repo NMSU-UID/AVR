@@ -4,7 +4,7 @@ class MenuitemsController < ApplicationController
   # GET /menuitems
   # GET /menuitems.json
   def index
-    # @menuitems = Menuitem.all.where(category_id: params[:category_id])
+    @menuitems = Menuitem.all.where(category_id: params[:category_id])
 
     respond_to do |format|
       format.html

@@ -117,7 +117,8 @@ table {
   width: 120px;
   height: 100px;
   margin-bottom: 30px;
-  border-radius: 20px 3px;
+  border-radius: 30px 30px;
+  text-align: center;
 }
 
 
@@ -192,8 +193,9 @@ h1 {
 
 #receipt_table {
   margin: 0;
+  position: relative;
   border-spacing: 0;
-  width: inherit;
+  width: calc(100% - 1px);
 }
 
 #receipt_table th {

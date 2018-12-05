@@ -1,6 +1,5 @@
-<%= pp @cat_id %> 
 
-<% @cat_id = Menuitem.all.where(category_id: @cat_id) %>
+<% @cat_id = Menuitem.all.where(category_id: @category_id) %>
 
 <div class="fooditems">
   <% @cat_id.each do |item| %>

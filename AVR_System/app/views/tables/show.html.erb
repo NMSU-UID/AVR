@@ -1,18 +1,6 @@
 
 
-<p id="notice"><%= notice %></p>
-
-<div class="top_table_info">
-  <div class="space">
-  <strong>Table number:</strong>
-  <%= @table.table_number %>
-
-  <p>
-    <strong>Employee:</strong>
-    <%= Waiter.find(@table.waiter_id).first_name %>
-  </p>
-  </div>
-</div>
+<p id="notice"><%= notice %></p><br>
 
 <div class="row">
   <div class="main_table">
@@ -35,11 +23,6 @@
       </table>
     </div>
 
-
-
-  <!--  <%#= link_to 'Edit', edit_table_path(@table) %> |-->
-    <%#= link_to 'Back', tables_path %>
-
     <div class="categories">
       <% @categories.each do |category| %>
         <div class = "items_flex">
@@ -47,8 +30,8 @@
             <tbody>
             <tr class="clickable-row">
               <td>
-                <%= link_to image_tag("#{category.name}.png", class: "compress")%><br>
-                <%= category.name %><% @cat_id = category.id %></td>
+                <%= link_to image_tag("#{category.name}.png", class: "compress"), table_path(@table, category_id: category.id, page: params[:page] )%><br>
+                <%= category.name %></td>
             </tr>
             </tbody>
           </table>
@@ -60,7 +43,7 @@
       </div>
     </div>
   </div>
-  <%= render partial: "/menuitems/menuitembuttons", locals: { category_id: @cat_id } %>
+  <%= render partial: "/menuitems/menuitembuttons", locals: { category_id: @category_id } %>
 </div>
 
 

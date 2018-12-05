@@ -16,11 +16,12 @@ class TablesController < ApplicationController
   # GET /tables/1.json
   def show
     @categories = Category.paginate(:page => params[:page], :per_page => 5)
+    @category_id = params[:category_id]
+
     @total = 0;
     @table.menuitems.each do |item|
       @total = @total + item.price
     end
-    pp @table_items
   end
 
   # GET /tables/new
@@ -81,6 +82,6 @@ class TablesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def table_params
-      params.require(:table).permit(:table_number, :waiters_id)
+      params.require(:table).permit(:table_number, :waiters_id, :category_id, :page)
     end
 end
