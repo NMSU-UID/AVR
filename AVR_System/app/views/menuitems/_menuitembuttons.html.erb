@@ -5,7 +5,7 @@
   <% @cat_id.each do |item| %>
 
     <div class="food_flex">
-      <div class="food_image"><%= image_tag("#{item.name}.png", class: "item_images") %></div>
+      <div class="food_image"><%= link_to image_tag("#{item.name}.png", class: "item_images"), tables_items_joins_path(table_id: @table.id, menuitem_id: item.id), method: :post %></div>
       <div class="food_text"><%= item.name %></div>
       <div class="food_price"><%= "$#{item.price}" %></div>
     </div>

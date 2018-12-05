@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :menuitems
   resources :categories
   resources :tables
+  resources :tables_items_joins
   get 'sessions/new'
   resources :waiters
 
