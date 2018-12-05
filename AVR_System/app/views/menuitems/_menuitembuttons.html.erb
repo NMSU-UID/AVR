@@ -3,14 +3,11 @@
 
 <div class="fooditems">
   <% @cat_id.each do |item| %>
-    <div class = "food_flex">
-      <table class="food_index">
-        <tbody>
-        <td><%= item.name %></td>
-         <td><%= item.price %><br></td>
-         </tr>
-        </tbody>
-      </table>
+
+    <div class="food_flex">
+      <div class="food_image"><%= image_tag("#{item.name}.png", class: "item_images") %></div>
+      <div class="food_text"><%= item.name %></div>
+      <div class="food_price"><%= "$#{item.price}" %></div>
     </div>
   <% end %>
 </div>
