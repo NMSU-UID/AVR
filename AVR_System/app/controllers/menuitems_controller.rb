@@ -4,8 +4,11 @@ class MenuitemsController < ApplicationController
   # GET /menuitems
   # GET /menuitems.json
   def index
-    @menuitems = Menuitem.all.where(category_id: params[:category_id])
-    pp @menuitems
+    # @menuitems = Menuitem.all.where(category_id: params[:category_id])
+
+    respond_to do |format|
+      format.html
+    end
   end
 
   def menuitembuttons
@@ -74,7 +77,7 @@ class MenuitemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def menuitem_params
-      params.require(:menuitem).permit(:name, :category_id, :cat_id)
+      params.require(:menuitem).permit(:name, :category_id)
     end
 end
 

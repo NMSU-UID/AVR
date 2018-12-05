@@ -39,7 +39,6 @@
 
   <!--  <%#= link_to 'Edit', edit_table_path(@table) %> |-->
     <%#= link_to 'Back', tables_path %>
-<% @cat_id = 1 %>
 
     <div class="categories">
       <% @categories.each do |category| %>
@@ -48,7 +47,7 @@
             <tbody>
             <tr class="clickable-row">
               <td>
-                <%= link_to image_tag("#{category.name}.png", class: "compress")%>
+                <%= link_to image_tag("#{category.name}.png", class: "compress")%><br>
                 <%= category.name %><% @cat_id = category.id %></td>
             </tr>
             </tbody>
@@ -61,7 +60,7 @@
       </div>
     </div>
   </div>
-  <%= render partial: "/menuitems/menuitembuttons", cat_id: @cat_id %>
+  <%= render partial: "/menuitems/menuitembuttons", locals: { category_id: @cat_id } %>
 </div>
 
 

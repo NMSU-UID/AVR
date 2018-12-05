@@ -1,13 +1,14 @@
-<%= stylesheet_link_tag "/menuitems" %>
+<%= pp @cat_id %> 
 
 <% @cat_id = Menuitem.all.where(category_id: @cat_id) %>
+
 <div class="fooditems">
   <% @cat_id.each do |item| %>
     <div class = "food_flex">
       <table class="food_index">
         <tbody>
-         <%= item.name %>
-         <%= item.price %><br>
+        <td><%= item.name %></td>
+         <td><%= item.price %><br></td>
          </tr>
         </tbody>
       </table>
