@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_29_204819) do
+ActiveRecord::Schema.define(version: 2018_12_06_051531) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 2018_11_29_204819) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "items_mods_joins", force: :cascade do |t|
+    t.bigint "menuitems_id"
+    t.bigint "mods_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["menuitems_id"], name: "index_items_mods_joins_on_menuitems_id"
+    t.index ["mods_id"], name: "index_items_mods_joins_on_mods_id"
   end
 
   create_table "menuitems", force: :cascade do |t|
@@ -63,5 +72,7 @@ ActiveRecord::Schema.define(version: 2018_11_29_204819) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "items_mods_joins", "menuitems", column: "menuitems_id"
+  add_foreign_key "items_mods_joins", "mods", column: "mods_id"
   add_foreign_key "menuitems", "categories"
 end

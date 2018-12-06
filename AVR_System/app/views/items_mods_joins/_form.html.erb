@@ -1,0 +1,27 @@
+<%= form_with(model: items_mods_join, local: true) do |form| %>
+  <% if items_mods_join.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(items_mods_join.errors.count, "error") %> prohibited this items_mods_join from being saved:</h2>
+
+      <ul>
+      <% items_mods_join.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :menuitems_id %>
+    <%= form.text_field :menuitems_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mods_id %>
+    <%= form.text_field :mods_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

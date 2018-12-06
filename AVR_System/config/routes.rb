@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items_mods_joins
   resources :mods
   resources :menuitems
   resources :categories
